@@ -1,0 +1,13 @@
+A. Hold-out (stratified 80/20 split of KDDTrain)
+  naive_bayes   accuracy=75.3007% FPR=39.8174% macroF1=0.5229
+  decision_tree accuracy=99.8254% FPR=0.1485% macroF1=0.9446
+  xgboost       accuracy=99.9167% FPR=0.0520% macroF1=0.9778
+  ensemble      accuracy=99.9127% FPR=0.0594% macroF1=0.9778
+  5-fold CV accuracy: 99.8720% +/- 0.0311%
+  latency: {'single_row_median_ms': 4.76, 'batch_10k_seconds': 0.167, 'rows_per_second': 59832}
+B. Official benchmark (train KDDTrain, test KDDTest)
+  naive_bayes   accuracy=70.8836% FPR=18.8137% macroF1=0.5497
+  decision_tree accuracy=75.6343% FPR=3.3776% macroF1=0.4844
+  xgboost       accuracy=77.5683% FPR=2.9554% macroF1=0.5457
+  ensemble      accuracy=77.8655% FPR=2.9554% macroF1=0.5465
+Saved ids_ensemble.joblib and reports/metrics/metrics.json

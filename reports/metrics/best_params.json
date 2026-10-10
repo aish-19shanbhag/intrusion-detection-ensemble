@@ -1,0 +1,48 @@
+{
+  "features": [
+    "src_bytes",
+    "service",
+    "diff_srv_rate",
+    "flag",
+    "same_srv_rate",
+    "dst_bytes",
+    "dst_host_diff_srv_rate",
+    "dst_host_srv_count",
+    "count",
+    "dst_host_same_srv_rate",
+    "dst_host_serror_rate",
+    "serror_rate",
+    "dst_host_srv_serror_rate",
+    "srv_serror_rate",
+    "logged_in",
+    "dst_host_srv_diff_host_rate",
+    "dst_host_same_src_port_rate",
+    "dst_host_count",
+    "srv_count",
+    "srv_diff_host_rate",
+    "dst_host_rerror_rate",
+    "protocol_type",
+    "dst_host_srv_rerror_rate",
+    "rerror_rate",
+    "duration",
+    "srv_rerror_rate",
+    "hot",
+    "is_guest_login",
+    "wrong_fragment",
+    "num_compromised"
+  ],
+  "decision_tree": {
+    "max_depth": null,
+    "min_samples_leaf": 1
+  },
+  "xgboost": {
+    "n_estimators": 300,
+    "max_depth": 10,
+    "learning_rate": 0.1
+  },
+  "weights": [
+    1,
+    1,
+    2
+  ]
+}
